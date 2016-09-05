@@ -75,7 +75,7 @@
 |-----|---|------|---|
 |Over engineering| R |Open|MVP|
 |Free access to barcode readable database of products| A |open|Research|
-|     |   |      |   |
+|External pressures cause communicational process to be ignored effecting efficiency| R |open|No unilateral changes without communication|
 |     |   |      |   |
 |     |   |      |   |
 |     |   |      |   |
