@@ -68,3 +68,17 @@
 * Shopping list
 * My Net Diary
 * My Fitness Pal
+
+## Risks & Assumptions
+
+| Item|R/A|status|Mitigation|
+|-----|---|------|---|
+|Over engineering| R |Open|MVP|
+|Free access to barcode readable database of products| A |open|Research|
+|     |   |      |   |
+|     |   |      |   |
+|     |   |      |   |
+|     |   |      |   |
+|     |   |      |   |
+|     |   |      |   |
+|     |   |      |   |
