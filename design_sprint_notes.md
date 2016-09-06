@@ -34,9 +34,7 @@ Waffle: https://waffle.io/joseck0510/meal_planner
 ==========================================
 
 ## Customer
-* Health minded individuals who cook from recipes
-* Family event planner
-* Gym bunnies
+* Individuals who cook from recipes
 * People planning on a budget
 
 ## Problems
