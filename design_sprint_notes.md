@@ -82,3 +82,21 @@
 |     |   |      |   |
 |     |   |      |   |
 |     |   |      |   |
+
+## Convergence
+
+# Weekly menu planner
+
+* Add recipes to menu planner manually
+* Ability to save and load menu plan
+* Categories for meal times
+* Categories for meal types
+
+## MVP
+
+* Planner with recipe titles
+* Covers 7 days
+* Has menu with courses
+* Ability to add menus to breakfast, lunch and/or dinner
+* User accounts
+* AJAX/Asynchronous
