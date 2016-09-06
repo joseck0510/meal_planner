@@ -1,9 +1,14 @@
 ## DESIGN SPRINTS
 
+## Links
+
+Wireframes:  https://sketchboard.me/Tz56SucjbzsU#/
+BrainStorming:  https://www.draw.io/#G0By8cjD-ynicISDN3M3pqcmNqQVE
+Waffle: https://waffle.io/joseck0510/meal_planner
 
 ## Business Opportunity
 
-* THERE ARE A FEW APPS OUT  - THERE BUT NONE SEEM TO BE COMPLETE - missing calories used, or prices, or products are limited
+* THERE ARE A FEW APPS OUT THERE - BUT NONE SEEM TO BE COMPLETE - missing calories used, or prices, or products are limited
 * PEOPLE ON A BUDGET - USEFUL TO INCLUDE PRICES - MAYBE IMPORTED FROM 3RD PARTIES
   (EG COMPARE SUPERMARKET PRICES APPS )
 * FITNESS TRACKING ELEMENT - NUTRITIONAL AND EXERCISE INTERACTION
@@ -85,7 +90,7 @@
 
 ## Convergence
 
-# Weekly menu planner
+## Weekly menu planner
 
 * Add recipes to menu planner manually
 * Ability to save and load menu plan
@@ -94,9 +99,13 @@
 
 ## MVP
 
-* Planner with recipe titles
-* Covers 7 days
-* Has menu with courses
-* Ability to add menus to breakfast, lunch and/or dinner
+* Weekly planner with recipe titles
+* Covers 7 days, 3 meal slots a day
+* Meal suggestions based on what's in inventory
+* Ability to create recipes from scratch
+* Ability to add recipes from another website
+* Outputs shopping list based on menu plan and inventory
+* Subtracts from inventory automatically from the recipes used
+* Inventory can be manually updated
 * User accounts
 * AJAX/Asynchronous
