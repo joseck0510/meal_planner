@@ -21,19 +21,19 @@
 
 $(document).ready(function() {
     $('#calendar').fullCalendar({
+      aspectRatio: 5,
       header: {
-        center: 'month,agendaFourDay' // buttons for switching between views
-    },
+        left: 'prev,next, today',
+        center: 'title',
+      },
+      defaultView: 'basicWeek',
     views: {
-      businessHours: {
-        start: '10:00', // a start time (10am in this example)
-        end: '18:00', // an end time (6pm in this example)
-        },
-        agendaFourDay: {
-            type: 'agendaWeek',
+
+          basicWeek: {
+            type: 'basicWeek',
             duration: { days: 7},
             // slotDuration: '08:00:00',
-            slotLabelFormat: 'h:mm',
+            slotLabelFormat: 'h',
             allDayText: 'meal',
             buttonText: 'week',
       }
