@@ -14,3 +14,29 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require moment
+//= require fullcalendar
+
+
+
+$(document).ready(function() {
+    $('#calendar').fullCalendar({
+      header: {
+        center: 'month,agendaFourDay' // buttons for switching between views
+    },
+    views: {
+      businessHours: {
+        start: '10:00', // a start time (10am in this example)
+        end: '18:00', // an end time (6pm in this example)
+        },
+        agendaFourDay: {
+            type: 'agendaWeek',
+            duration: { days: 7},
+            // slotDuration: '08:00:00',
+            slotLabelFormat: 'h:mm',
+            allDayText: 'meal',
+            buttonText: 'week',
+      }
+    }
+    });
+});
