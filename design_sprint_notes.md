@@ -99,11 +99,15 @@ Waffle: https://waffle.io/joseck0510/meal_planner
 
 * Weekly planner with recipe titles
 * Covers 7 days, 3 meal slots a day
-* Meal suggestions based on what's in inventory
+* Meal suggestions based on manually entered ingredients (inspire me)
 * Ability to create recipes from scratch
 * Ability to add recipes from another website
-* Outputs shopping list based on menu plan and inventory
-* Subtracts from inventory automatically from the recipes used
-* Inventory can be manually updated
+* Outputs shopping list based on menu plan
 * User accounts
 * AJAX/Asynchronous
+* Searching the api for recipes (to include results from the cookbook)
+
+## Nice to have
+* Inventory can be manually updated
+* Subtracts from inventory automatically from the recipes used
+* Allow users to add images to their recipes
