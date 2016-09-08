@@ -1,0 +1,4 @@
+= if @recipe.any?
+  = @recipe.each do |recipe|
+    = recipe.title
+    = link_to 'Edit recipe', edit_recipe_path(recipe)
