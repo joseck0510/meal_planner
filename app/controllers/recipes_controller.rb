@@ -13,7 +13,9 @@ class RecipesController < ApplicationController
   end
 
   def create
-    @recipe = Recipe.create(recipe_params)
+    @recipe = Recipe.new(recipe_params)
+    @recipe.user = current_user
+    @recipe.save
     flash[:notice] = "Recipe(#{@recipe.title}) successfully created"
     redirect_to new_recipe_path
   end
