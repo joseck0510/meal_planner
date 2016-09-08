@@ -16,12 +16,7 @@ feature 'User can sign in and out' do
 
   context 'user signed in on the index' do
     before do
-      visit '/'
-      click_link 'Sign up'
-      fill_in 'Email', with: 'test@gmail.com'
-      fill_in 'Password', with: 'password'
-      fill_in 'Password confirmation', with: 'password'
-      click_button 'Sign up'
+      sign_up
     end
 
     it 'should see "sign out" link' do
