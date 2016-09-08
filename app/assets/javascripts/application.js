@@ -14,3 +14,29 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require moment
+//= require fullcalendar
+
+
+
+$(document).ready(function() {
+    $('#calendar').fullCalendar({
+      aspectRatio: 5,
+      header: {
+        left: 'prev,next, today',
+        center: 'title',
+      },
+      defaultView: 'basicWeek',
+    views: {
+
+          basicWeek: {
+            type: 'basicWeek',
+            duration: { days: 7},
+            // slotDuration: '08:00:00',
+            slotLabelFormat: 'h',
+            allDayText: 'meal',
+            buttonText: 'week',
+      }
+    }
+    });
+});
