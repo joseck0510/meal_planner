@@ -25,6 +25,14 @@ feature 'Recipes' do
       click_button 'Update Recipe'
       expect(page).to have_content 'French Omelette'
     end
+
+    scenario 'deleting a recipe' do
+      sign_up
+      add_recipe
+      visit '/recipes'
+      click_link 'Delete recipe'
+      expect(page).not_to have_content('Omelette')
+    end
   end
 
 

@@ -24,6 +24,12 @@ class RecipesController < ApplicationController
     redirect_to recipes_path
   end
 
+  def destroy
+    find_recipe
+    @recipe.destroy
+    redirect_to recipes_path
+  end
+
   private
 
   def find_recipe
