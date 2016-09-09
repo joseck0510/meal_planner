@@ -13,28 +13,29 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
 //= require moment
 //= require fullcalendar
-
-
+//= require bootstrap-sprockets
+//= require_tree .
 
 $(document).ready(function() {
     $('#calendar').fullCalendar({
-      aspectRatio: 5,
+      // aspectRatio: 2,
+      contentHeight: 358,
       header: {
-        left: 'prev,next, today',
+        left: ' ',
+        right: 'prev, today next',
         center: 'title',
       },
-      defaultView: 'basicWeek',
+      defaultView: 'agendaWeek',
     views: {
 
-          basicWeek: {
-            type: 'basicWeek',
+          agendaWeek: {
+            type: 'agendaWeek',
             duration: { days: 7},
-            // slotDuration: '08:00:00',
+            slotDuration: '08:00:00',
             slotLabelFormat: 'h',
-            allDayText: 'meal',
+            allDaySlot: false,
             buttonText: 'week',
       }
     }
