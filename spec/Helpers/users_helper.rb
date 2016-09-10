@@ -6,3 +6,11 @@ def sign_up
   fill_in 'Password confirmation', with: 'password'
   click_button 'Sign up'
 end
+
+def sign_in
+  visit '/'
+  click_link 'Sign in'
+  fill_in 'Email', with: 'test@gmail.com'
+  fill_in 'Password', with: 'password'
+  click_button 'Sign in'
+end

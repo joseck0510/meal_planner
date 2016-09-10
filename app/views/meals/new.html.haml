@@ -1,0 +1,14 @@
+= form_for @meal do |f|
+  = f.label("Day")
+  = f.radio_button(:name, "Sunday")
+  = f.radio_button(:name, 'Monday')
+  = f.radio_button(:name, "Tuesday")
+  = f.radio_button(:name, "Wednesday")
+  = f.radio_button(:name, "Thursday")
+  = f.radio_button(:name, "Friday")
+  = f.radio_button(:name, "Saturday")
+  = f.label("Meal")
+  = f.radio_button(:name, "Morning")
+  = f.radio_button(:name, "Afternoon")
+  = f.radio_button(:name, "Evening")
+  =f.collection_select
