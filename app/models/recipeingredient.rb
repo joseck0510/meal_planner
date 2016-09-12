@@ -1,6 +1,4 @@
-class RecipeIngredient < ActiveRecord::Base
-
+class Recipeingredient < ActiveRecord::Base
   belongs_to :ingredient
   belongs_to :recipe
-
 end
