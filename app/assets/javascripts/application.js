@@ -17,6 +17,7 @@
 //= require fullcalendar
 //= require bootstrap-sprockets
 //= require_tree .
+//= require cocoon
 
 $(document).ready(function() {
     $('#calendar').fullCalendar({

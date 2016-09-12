@@ -1,8 +1,16 @@
 = form_for @recipe do |f|
-  = f.label :title
-  = f.text_field :title
-  = f.label :ingredients
-  = f.text_field :ingredients
-  = f.label :instructions
-  = f.text_field :instructions
+  .field
+    = f.label :title
+    %br
+    = f.text_field :title
+  .field
+    = f.label :instructions
+    %br
+    = f.text_field :instructions
+  %h3 Ingredients
+  #ingredients
+    = f.fields_for :ingredients do |ingredient|
+      = render 'ingredient_fields', f:ingredient
+    .links
+      = link_to_add_association "Add ingredient", f, :ingredients
   = f.submit
