@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 ruby "2.3.1"
 
+gem 'nested_form_fields'
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
 gem 'devise'

@@ -13,11 +13,12 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require cocoon
+//= require nested_form_fields
 //= require moment
 //= require fullcalendar
 //= require bootstrap-sprockets
 //= require_tree .
-//= require cocoon
 
 $(document).ready(function() {
     $('#calendar').fullCalendar({

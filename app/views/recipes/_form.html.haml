@@ -1,16 +1,18 @@
 = form_for @recipe do |f|
-  .field
-    = f.label :title
+  %br
+  = f.label :title
+  = f.text_field :title
+  %br
+  = f.label :instructions
+  = f.text_field :instructions
+  %br
+  = f.nested_fields_for :ingredients do |iform|
+    = iform.label :name
+    = iform.text_field :name
+    = iform.label :quantity
+    = iform.text_field :quantity
     %br
-    = f.text_field :title
-  .field
-    = f.label :instructions
-    %br
-    = f.text_field :instructions
-  %h3 Ingredients
-  #ingredients
-    = f.fields_for :ingredients do |ingredient|
-      = render 'ingredient_fields', f:ingredient
-    .links
-      = link_to_add_association "Add ingredient", f, :ingredients
+    = iform.remove_nested_fields_link "remove ingredient"
+  = f.add_nested_fields_link :ingredients, "Add ingredient"
+  %br
   = f.submit
