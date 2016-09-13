@@ -2,7 +2,7 @@ class MealsController < ApplicationController
 
   def new
     @meal = Meal.new
-    @meal.recipes.build
+    @meal.mealrecipes.build
   end
 
   def create
@@ -16,10 +16,7 @@ class MealsController < ApplicationController
   private
 
   def meal_params
-    params.require(:meal).permit(:day_slot, :meal_slot, recipes_attributes:[:recipe_id])
+    params.require(:meal).permit(:day_slot, :meal_slot,
+    mealrecipes_attributes:[:recipe_id, :meal_id])
   end
-  # def meal_params
-  #   params.require(:recipe).permit(:title, :instructions,
-  #    ingredients_attributes:[:recipe_id,:_destroy, :recipeingredients_id, :name, :quantity])
-  # end
 end

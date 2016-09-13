@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   resources :planners
   resources :recipes
   resources :meals
+
   # You can have the root of your site routed with "root"
   root 'planners#index'
 
