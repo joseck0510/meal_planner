@@ -7,4 +7,9 @@ class Recipe < ActiveRecord::Base
 
   accepts_nested_attributes_for :ingredients, allow_destroy: true,
                              reject_if: :all_blank
+
+ def self.search(search)
+   where("title ILIKE ? ", "%#{search}%")
+ end
+
 end
