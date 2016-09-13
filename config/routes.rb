@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
   resources :planners
   resources :recipes
+  resources :meals
   # You can have the root of your site routed with "root"
   root 'planners#index'
 
