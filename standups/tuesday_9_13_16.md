@@ -14,6 +14,7 @@
 * Planner view
 * Shopping list view
 * Search my recipe book
+* Recipe show view
 * Inspire me API
 
 ## Obstacles
