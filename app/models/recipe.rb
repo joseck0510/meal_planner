@@ -9,7 +9,8 @@ class Recipe < ActiveRecord::Base
                              reject_if: :all_blank
 
  def self.search(search)
-   where("title ILIKE ? ", "%#{search}%")
+   joins(:ingredients)
+    .where("title ILIKE ? OR ingredients.name ILIKE ? ", "%#{search}%", "%#{search}%")
  end
 
 end
