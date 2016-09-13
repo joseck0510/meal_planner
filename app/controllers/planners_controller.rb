@@ -2,8 +2,8 @@ class PlannersController < ApplicationController
 
   def index
       if params[:search]
-        @recipes = Recipe.search(params[:search]).order("created_at DESC")
+        @recipes = Recipe.search(params[:search]).order("created_at DESC").uniq
       end
   end
-  
+
 end
