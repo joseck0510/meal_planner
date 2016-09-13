@@ -2,8 +2,14 @@ source 'https://rubygems.org'
 
 ruby "2.3.1"
 
+gem 'nested_form_fields'
+gem 'bootstrap-sass'
+gem 'autoprefixer-rails'
 gem 'devise'
 gem 'haml-rails'
+gem 'fullcalendar-rails'
+gem 'momentjs-rails'
+gem "cocoon"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.7.1'
 # Use postgresql as the database for Active Record

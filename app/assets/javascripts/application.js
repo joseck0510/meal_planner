@@ -13,4 +13,33 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require cocoon
+//= require nested_form_fields
+//= require moment
+//= require fullcalendar
+//= require bootstrap-sprockets
 //= require_tree .
+
+$(document).ready(function() {
+    $('#calendar').fullCalendar({
+      // aspectRatio: 2,
+      contentHeight: 358,
+      header: {
+        left: ' ',
+        right: 'prev, today next',
+        center: 'title',
+      },
+      defaultView: 'agendaWeek',
+    views: {
+
+          agendaWeek: {
+            type: 'agendaWeek',
+            duration: { days: 7},
+            slotDuration: '08:00:00',
+            slotLabelFormat: 'h',
+            allDaySlot: false,
+            buttonText: 'week',
+      }
+    }
+    });
+});
