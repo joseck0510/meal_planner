@@ -28,6 +28,16 @@ feature 'Recipes' do
       click_link 'Delete recipe'
       expect(page).not_to have_content('Omelette')
     end
+
+    scenario 'viewing a recipe' do
+      sign_up
+      add_recipe
+      click_link 'My Recipes'
+      click_link 'Omelette'
+      expect(page).to have_content 'Omelette'
+      expect(page).to have_content 'Egg'
+      expect(page).to have_content '2'
+    end
   end
 
 
