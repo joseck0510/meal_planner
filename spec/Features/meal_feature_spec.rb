@@ -11,7 +11,6 @@ feature 'meals' do
       click_button 'Create Meal'
       expect(page).to have_content 'Monday'
       expect(page).to have_content 'Evening'
-      expect(page).to have_content 'Omelette'
       expect(current_path).to eq '/'
     end
   end

@@ -4,7 +4,7 @@
                          'Friday','Saturday','Sunday'])
   = f.label "Meal time"
   = f.select(:meal_slot, ['Morning', 'Afternoon', 'Evening'])
-  = f.fields_for :recipes do |ff|
+  = f.nested_fields_for :recipes do |ff|
     = ff.label "Recipe"
     = ff.collection_select(:recipe_id, current_user.recipes, :id, :title)
   = f.submit

@@ -5,4 +5,7 @@ class Meal < ActiveRecord::Base
   has_many :mealrecipes
   has_many :recipes, through: :mealrecipes, dependent: :destroy
 
+  accepts_nested_attributes_for :recipes, allow_destroy: true
+
+
 end
