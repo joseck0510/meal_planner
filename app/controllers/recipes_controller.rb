@@ -33,6 +33,10 @@ class RecipesController < ApplicationController
     redirect_to recipes_path
   end
 
+  def show
+    find_recipe
+  end
+
   private
 
   def find_recipe

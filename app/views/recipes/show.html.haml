@@ -1,0 +1,7 @@
+%h2= @recipe.title
+%h3 Instructions
+= @recipe.instructions
+%h3 Ingredients
+- @recipe.ingredients.each do |ingredient|
+  = "#{ingredient.quantity} #{ingredient.name}"
+  %br
