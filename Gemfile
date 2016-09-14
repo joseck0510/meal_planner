@@ -10,8 +10,6 @@ gem 'haml-rails'
 gem 'fullcalendar-rails'
 gem 'momentjs-rails'
 gem "cocoon"
-gem 'ransack'
-gem 'httparty'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
