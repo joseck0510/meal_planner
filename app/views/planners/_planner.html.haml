@@ -1,0 +1,6 @@
+.planner
+  - if user_signed_in?
+    - current_user.meals.each do |meal|
+      = meal.day_slot
+      = meal.meal_slot
+      = meal.recipes[0].title

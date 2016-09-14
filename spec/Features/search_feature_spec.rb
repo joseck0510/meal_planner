@@ -1,10 +1,8 @@
-require 'rails_helper'
-
 feature 'search' do
   scenario 'by recipe titles' do
     sign_up(email: 'test23@test.com')
     add_recipe
-    add_recipe(title: "Pasta", first_ingredient: 'pasta')
+    add_recipe(title: "Pasta", ingredient1: 'pasta')
     visit '/'
     fill_in 'search', with: 'Omelette'
     click_button 'Search'
@@ -15,7 +13,7 @@ feature 'search' do
   scenario 'by ingredients' do
     sign_up
     add_recipe
-    add_recipe(title: "Pasta", first_ingredient: 'pasta')
+    add_recipe(title: "Pasta", ingredient1: 'pasta')
     visit '/'
     fill_in 'search', with: 'egg'
     click_button 'Search'

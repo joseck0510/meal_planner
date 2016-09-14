@@ -1,5 +1,3 @@
-require 'rails_helper'
-
 feature 'Recipes' do
 
   context 'user signed in' do
@@ -35,7 +33,7 @@ feature 'Recipes' do
       click_link 'My Recipes'
       click_link 'Omelette'
       expect(page).to have_content 'Omelette'
-      expect(page).to have_content 'Egg'
+      expect(page).to have_content 'egg'
       expect(page).to have_content '2'
     end
   end

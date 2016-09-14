@@ -1,5 +1,3 @@
-require 'rails_helper'
-
 feature 'User can sign in and out' do
   context 'user not signed in and on index' do
     it 'should see "sign in" link and "sign up" link' do
