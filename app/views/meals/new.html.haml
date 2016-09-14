@@ -1,0 +1,10 @@
+= form_for @meal do |f|
+  = f.label "Day"
+  = f.select(:day_slot, ['Monday','Tuesday','Wednesday','Thursday',
+                         'Friday','Saturday','Sunday'])
+  = f.label "Meal time"
+  = f.select(:meal_slot, ['Morning', 'Afternoon', 'Evening'])
+  = f.nested_fields_for :mealrecipes do |ff|
+    = ff.label "Recipe"
+    = ff.collection_select(:recipe_id, current_user.recipes, :id, :title)
+  = f.submit
