@@ -1,6 +1,219 @@
-.planner
-  - if user_signed_in?
-    - current_user.meals.each do |meal|
-      = meal.day_slot
-      = meal.meal_slot
-      = meal.recipes[0].title
+#rowheaders.day
+  %h2.blanktext header
+  .meal_label
+    %h3 Morning
+  .meal_label
+    %h3 Afternoon
+  .meal_label
+    %h3 Evening
+#monday.day
+  %h2 Monday
+  .morning.meal
+    %p.dish
+      - if user_signed_in?
+        - current_user.meals.each do |meal|
+          - if meal.meal_slot == "Morning" && meal.day_slot == "Monday"
+            = meal.recipes[0].title
+  .afternoon.meal
+    %p.dish
+      - if user_signed_in?
+        - current_user.meals.each do |meal|
+          - if meal.meal_slot == "Afternoon" && meal.day_slot == "Monday"
+            = meal.recipes[0].title
+  .evening.meal
+    %p.dish
+      - if user_signed_in?
+        - current_user.meals.each do |meal|
+          - if meal.meal_slot == "Evening" && meal.day_slot == "Monday"
+            = meal.recipes[0].title
+#tuesday.day
+  %h2 Tuesday
+  .morning.meal
+    %p.dish
+      - if user_signed_in?
+        - current_user.meals.each do |meal|
+          - if meal.meal_slot == "Morning" && meal.day_slot == "Tuesday"
+            = meal.recipes[0].title
+  .afternoon.meal
+    %p.dish
+      - if user_signed_in?
+        - current_user.meals.each do |meal|
+          - if meal.meal_slot == "Afternoon" && meal.day_slot == "Tuesday"
+            = meal.recipes[0].title
+  .evening.meal
+    %p.dish
+      - if user_signed_in?
+        - current_user.meals.each do |meal|
+          - if meal.meal_slot == "Evening" && meal.day_slot == "Tuesday"
+            = meal.recipes[0].title
+#wednesday.day
+  %h2 Wednesday
+  .morning.meal
+    %p.dish
+      - if user_signed_in?
+        - current_user.meals.each do |meal|
+          - if meal.meal_slot == "Morning" && meal.day_slot == "Wednesday"
+            = meal.recipes[0].title
+  .afternoon.meal
+    %p.dish
+      - if user_signed_in?
+        - current_user.meals.each do |meal|
+          - if meal.meal_slot == "Afternoon" && meal.day_slot == "Wednesday"
+            = meal.recipes[0].title
+  .evening.meal
+    %p.dish
+      - if user_signed_in?
+        - current_user.meals.each do |meal|
+          - if meal.meal_slot == "Evening" && meal.day_slot == "Wednesday"
+            = meal.recipes[0].title
+#thursday.day
+  %h2 Thursday
+  .morning.meal
+    %p.dish
+      - if user_signed_in?
+        - current_user.meals.each do |meal|
+          - if meal.meal_slot == "Morning" && meal.day_slot == "Thursday"
+            = meal.recipes[0].title
+  .afternoon.meal
+    %p.dish
+      - if user_signed_in?
+        - current_user.meals.each do |meal|
+          - if meal.meal_slot == "Afternoon" && meal.day_slot == "Thursday"
+            = meal.recipes[0].title
+  .evening.meal
+    %p.dish
+      - if user_signed_in?
+        - current_user.meals.each do |meal|
+          - if meal.meal_slot == "Evening" && meal.day_slot == "Thursday"
+            = meal.recipes[0].title
+#friday.day
+  %h2 Friday
+  .morning.meal
+    %p.dish
+      - if user_signed_in?
+        - current_user.meals.each do |meal|
+          - if meal.meal_slot == "Morning" && meal.day_slot == "Friday"
+            = meal.recipes[0].title
+  .afternoon.meal
+    %p.dish
+      - if user_signed_in?
+        - current_user.meals.each do |meal|
+          - if meal.meal_slot == "Afternoon" && meal.day_slot == "Friday"
+            = meal.recipes[0].title
+  .evening.meal
+    %p.dish
+      - if user_signed_in?
+        - current_user.meals.each do |meal|
+          - if meal.meal_slot == "Evening" && meal.day_slot == "Friday"
+            = meal.recipes[0].title
+#saturday.day
+  %h2 Saturday
+  .morning.meal
+    %p.dish
+      - if user_signed_in?
+        - current_user.meals.each do |meal|
+          - if meal.meal_slot == "Morning" && meal.day_slot == "Saturday"
+            = meal.recipes[0].title
+  .afternoon.meal
+    %p.dish
+      - if user_signed_in?
+        - current_user.meals.each do |meal|
+          - if meal.meal_slot == "Afternoon" && meal.day_slot == "Saturday"
+            = meal.recipes[0].title
+  .evening.meal
+    %p.dish
+      - if user_signed_in?
+        - current_user.meals.each do |meal|
+          - if meal.meal_slot == "Evening" && meal.day_slot == "Saturday"
+            = meal.recipes[0].title
+#sunday.day
+  %h2 Sunday
+  .morning.meal
+    %p.dish
+      - if user_signed_in?
+        - current_user.meals.each do |meal|
+          - if meal.meal_slot == "Morning" && meal.day_slot == "Sunday"
+            = meal.recipes[0].title
+  .afternoon.meal
+    %p.dish
+      - if user_signed_in?
+        - current_user.meals.each do |meal|
+          - if meal.meal_slot == "Afternoon" && meal.day_slot == "Sunday"
+            = meal.recipes[0].title
+  .evening.meal
+    %p.dish
+      - if user_signed_in?
+        - current_user.meals.each do |meal|
+          - if meal.meal_slot == "Evening" && meal.day_slot == "Sunday"
+            = meal.recipes[0].title
+
+-# %table
+-#   %tbody
+-#     %tr
+-#       %td
+-#
+-#       %td.day
+-#         Monday
+-#       %td.day
+-#         Tuesday
+-#       %td.day
+-#         Wednesday 
+-#       %td.day
+-#         Thursday
+-#       %td.day
+-#         Friday 
+-#       %td.day
+-#         Saturday
+-#       %td.day
+-#         Sunday  
+-#     %tr
+-#       %td
+-#         Morning
+-#       %td
+-#         Test
+-#       %td
+-#         Test
+-#       %td
+-#         Test 
+-#       %td
+-#         Test
+-#       %td
+-#         Test 
+-#       %td
+-#         Test
+-#       %td
+-#         Test  
+-#     %tr
+-#       %td
+-#         Afternoon
+-#       %td
+-#         Test
+-#       %td
+-#         Test
+-#       %td
+-#         Test 
+-#       %td
+-#         Test
+-#       %td
+-#         Test 
+-#       %td
+-#         Test
+-#       %td
+-#         Test   
+-#     %tr
+-#       %td
+-#         Evening
+-#       %td
+-#         Test
+-#       %td
+-#         Test
+-#       %td
+-#         Test 
+-#       %td
+-#         Test
+-#       %td
+-#         Test 
+-#       %td
+-#         Test
+-#       %td
+-#         Test   
