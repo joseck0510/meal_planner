@@ -1,4 +1,4 @@
-require 'rails_helper'
+
 
 feature 'Recipes' do
 
