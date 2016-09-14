@@ -1,6 +1,8 @@
 !!!
 %html
   %body
+    = render 'planner'
+    %br
     = render "search_form"
     - if params[:search].present?
       - if @recipes.blank?
@@ -8,4 +10,3 @@
       - else
         - @recipes.each do |recipe|
           = recipe.title
-    = render 'planner'

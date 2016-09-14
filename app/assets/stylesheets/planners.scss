@@ -11,12 +11,10 @@ p {
   padding: 0;
 }
 
-#rowheaders {
-  width: 5%
-}
 
 .blanktext {
   color: transparent;
+  border-style: solid;
 }
 
 .meal_label {
@@ -24,15 +22,15 @@ p {
   padding: 0.5em;
   margin: 0.25em;
   min-height: 6em;
-  h3 {
-    transform: rotate(-90deg);
-  }
+  text-align:center;
 }
 
 .day {
   width: 10%;
   float: left;
   background: salmon;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .meal {
@@ -40,4 +38,12 @@ p {
   padding: 0.5em;
   margin: 0.25em;
   min-height: 6em;
+}
+
+.planner {
+  margin: auto 0
+}
+
+.container {
+  margin: auto 0
 }

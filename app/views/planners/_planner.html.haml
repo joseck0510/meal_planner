@@ -1,219 +1,136 @@
-#rowheaders.day
-  %h2.blanktext header
-  .meal_label
-    %h3 Morning
-  .meal_label
-    %h3 Afternoon
-  .meal_label
-    %h3 Evening
-#monday.day
-  %h2 Monday
-  .morning.meal
-    %p.dish
-      - if user_signed_in?
-        - current_user.meals.each do |meal|
-          - if meal.meal_slot == "Morning" && meal.day_slot == "Monday"
-            = meal.recipes[0].title
-  .afternoon.meal
-    %p.dish
-      - if user_signed_in?
-        - current_user.meals.each do |meal|
-          - if meal.meal_slot == "Afternoon" && meal.day_slot == "Monday"
-            = meal.recipes[0].title
-  .evening.meal
-    %p.dish
-      - if user_signed_in?
-        - current_user.meals.each do |meal|
-          - if meal.meal_slot == "Evening" && meal.day_slot == "Monday"
-            = meal.recipes[0].title
-#tuesday.day
-  %h2 Tuesday
-  .morning.meal
-    %p.dish
-      - if user_signed_in?
-        - current_user.meals.each do |meal|
-          - if meal.meal_slot == "Morning" && meal.day_slot == "Tuesday"
-            = meal.recipes[0].title
-  .afternoon.meal
-    %p.dish
-      - if user_signed_in?
-        - current_user.meals.each do |meal|
-          - if meal.meal_slot == "Afternoon" && meal.day_slot == "Tuesday"
-            = meal.recipes[0].title
-  .evening.meal
-    %p.dish
-      - if user_signed_in?
-        - current_user.meals.each do |meal|
-          - if meal.meal_slot == "Evening" && meal.day_slot == "Tuesday"
-            = meal.recipes[0].title
-#wednesday.day
-  %h2 Wednesday
-  .morning.meal
-    %p.dish
-      - if user_signed_in?
-        - current_user.meals.each do |meal|
-          - if meal.meal_slot == "Morning" && meal.day_slot == "Wednesday"
-            = meal.recipes[0].title
-  .afternoon.meal
-    %p.dish
-      - if user_signed_in?
-        - current_user.meals.each do |meal|
-          - if meal.meal_slot == "Afternoon" && meal.day_slot == "Wednesday"
-            = meal.recipes[0].title
-  .evening.meal
-    %p.dish
-      - if user_signed_in?
-        - current_user.meals.each do |meal|
-          - if meal.meal_slot == "Evening" && meal.day_slot == "Wednesday"
-            = meal.recipes[0].title
-#thursday.day
-  %h2 Thursday
-  .morning.meal
-    %p.dish
-      - if user_signed_in?
-        - current_user.meals.each do |meal|
-          - if meal.meal_slot == "Morning" && meal.day_slot == "Thursday"
-            = meal.recipes[0].title
-  .afternoon.meal
-    %p.dish
-      - if user_signed_in?
-        - current_user.meals.each do |meal|
-          - if meal.meal_slot == "Afternoon" && meal.day_slot == "Thursday"
-            = meal.recipes[0].title
-  .evening.meal
-    %p.dish
-      - if user_signed_in?
-        - current_user.meals.each do |meal|
-          - if meal.meal_slot == "Evening" && meal.day_slot == "Thursday"
-            = meal.recipes[0].title
-#friday.day
-  %h2 Friday
-  .morning.meal
-    %p.dish
-      - if user_signed_in?
-        - current_user.meals.each do |meal|
-          - if meal.meal_slot == "Morning" && meal.day_slot == "Friday"
-            = meal.recipes[0].title
-  .afternoon.meal
-    %p.dish
-      - if user_signed_in?
-        - current_user.meals.each do |meal|
-          - if meal.meal_slot == "Afternoon" && meal.day_slot == "Friday"
-            = meal.recipes[0].title
-  .evening.meal
-    %p.dish
-      - if user_signed_in?
-        - current_user.meals.each do |meal|
-          - if meal.meal_slot == "Evening" && meal.day_slot == "Friday"
-            = meal.recipes[0].title
-#saturday.day
-  %h2 Saturday
-  .morning.meal
-    %p.dish
-      - if user_signed_in?
-        - current_user.meals.each do |meal|
-          - if meal.meal_slot == "Morning" && meal.day_slot == "Saturday"
-            = meal.recipes[0].title
-  .afternoon.meal
-    %p.dish
-      - if user_signed_in?
-        - current_user.meals.each do |meal|
-          - if meal.meal_slot == "Afternoon" && meal.day_slot == "Saturday"
-            = meal.recipes[0].title
-  .evening.meal
-    %p.dish
-      - if user_signed_in?
-        - current_user.meals.each do |meal|
-          - if meal.meal_slot == "Evening" && meal.day_slot == "Saturday"
-            = meal.recipes[0].title
-#sunday.day
-  %h2 Sunday
-  .morning.meal
-    %p.dish
-      - if user_signed_in?
-        - current_user.meals.each do |meal|
-          - if meal.meal_slot == "Morning" && meal.day_slot == "Sunday"
-            = meal.recipes[0].title
-  .afternoon.meal
-    %p.dish
-      - if user_signed_in?
-        - current_user.meals.each do |meal|
-          - if meal.meal_slot == "Afternoon" && meal.day_slot == "Sunday"
-            = meal.recipes[0].title
-  .evening.meal
-    %p.dish
-      - if user_signed_in?
-        - current_user.meals.each do |meal|
-          - if meal.meal_slot == "Evening" && meal.day_slot == "Sunday"
-            = meal.recipes[0].title
+.container
+  .row
+    .column
+      %table
+        %tbody
+          %tr
+            %td
 
--# %table
--#   %tbody
--#     %tr
--#       %td
--#
--#       %td.day
--#         Monday
--#       %td.day
--#         Tuesday
--#       %td.day
--#         Wednesday 
--#       %td.day
--#         Thursday
--#       %td.day
--#         Friday 
--#       %td.day
--#         Saturday
--#       %td.day
--#         Sunday  
--#     %tr
--#       %td
--#         Morning
--#       %td
--#         Test
--#       %td
--#         Test
--#       %td
--#         Test 
--#       %td
--#         Test
--#       %td
--#         Test 
--#       %td
--#         Test
--#       %td
--#         Test  
--#     %tr
--#       %td
--#         Afternoon
--#       %td
--#         Test
--#       %td
--#         Test
--#       %td
--#         Test 
--#       %td
--#         Test
--#       %td
--#         Test 
--#       %td
--#         Test
--#       %td
--#         Test   
--#     %tr
--#       %td
--#         Evening
--#       %td
--#         Test
--#       %td
--#         Test
--#       %td
--#         Test 
--#       %td
--#         Test
--#       %td
--#         Test 
--#       %td
--#         Test
--#       %td
--#         Test   
+            %td
+              Monday
+            %td
+              Tuesday
+            %td
+              Wednesday 
+            %td
+              Thursday
+            %td
+              Friday 
+            %td
+              Saturday
+            %td
+              Sunday  
+          %tr
+            %td
+              Morning
+            %td.morning.monday
+              - if user_signed_in?
+                - current_user.meals.each do |meal|
+                  - if meal.meal_slot == "Morning" && meal.day_slot == "Monday"
+                    = meal.recipes[0].title
+            %td.morning.tuesday
+              - if user_signed_in?
+                - current_user.meals.each do |meal|
+                  - if meal.meal_slot == "Morning" && meal.day_slot == "Tuesday"
+                    = meal.recipes[0].title
+            %td.morning.wednesday
+              - if user_signed_in?
+                - current_user.meals.each do |meal|
+                  - if meal.meal_slot == "Morning" && meal.day_slot == "Wednesday"
+                    = meal.recipes[0].title
+            %td.morning.thursday
+              - if user_signed_in?
+                - current_user.meals.each do |meal|
+                  - if meal.meal_slot == "Morning" && meal.day_slot == "Thursday"
+                    = meal.recipes[0].title
+            %td.morning.friday
+              - if user_signed_in?
+                - current_user.meals.each do |meal|
+                  - if meal.meal_slot == "Morning" && meal.day_slot == "Friday"
+                    = meal.recipes[0].title
+            %td.morning.saturday
+              - if user_signed_in?
+                - current_user.meals.each do |meal|
+                  - if meal.meal_slot == "Morning" && meal.day_slot == "Saturday"
+                    = meal.recipes[0].title
+            %td.morning.sunday
+              - if user_signed_in?
+                - current_user.meals.each do |meal|
+                  - if meal.meal_slot == "Morning" && meal.day_slot == "Sunday"
+                    = meal.recipes[0].title 
+          %tr
+            %td
+              Afternoon
+            %td.afternoon.monday
+              - if user_signed_in?
+                - current_user.meals.each do |meal|
+                  - if meal.meal_slot == "Afternoon" && meal.day_slot == "Monday"
+                    = meal.recipes[0].title
+            %td.afternoon.tuesday
+              - if user_signed_in?
+                - current_user.meals.each do |meal|
+                  - if meal.meal_slot == "Afternoon" && meal.day_slot == "Tuesday"
+                    = meal.recipes[0].title
+            %td.afternoon.wednesday
+              - if user_signed_in?
+                - current_user.meals.each do |meal|
+                  - if meal.meal_slot == "Afternoon" && meal.day_slot == "Wednesday"
+                    = meal.recipes[0].title
+            %td.afternoon.thursday
+              - if user_signed_in?
+                - current_user.meals.each do |meal|
+                  - if meal.meal_slot == "Afternoon" && meal.day_slot == "Thursday"
+                    = meal.recipes[0].title
+            %td.afternoon.friday
+              - if user_signed_in?
+                - current_user.meals.each do |meal|
+                  - if meal.meal_slot == "Afternoon" && meal.day_slot == "Friday"
+                    = meal.recipes[0].title
+            %td.afternoon.saturday
+              - if user_signed_in?
+                - current_user.meals.each do |meal|
+                  - if meal.meal_slot == "Afternoon" && meal.day_slot == "Saturday"
+                    = meal.recipes[0].title
+            %td.afternoon.sunday
+              - if user_signed_in?
+                - current_user.meals.each do |meal|
+                  - if meal.meal_slot == "Afternoon" && meal.day_slot == "Sunday"
+                    = meal.recipes[0].title 
+          %tr
+            %td
+              Evening
+            %td.evening.monday
+              - if user_signed_in?
+                - current_user.meals.each do |meal|
+                  - if meal.meal_slot == "Evening" && meal.day_slot == "Monday"
+                    = meal.recipes[0].title
+            %td.evening.tuesday
+              - if user_signed_in?
+                - current_user.meals.each do |meal|
+                  - if meal.meal_slot == "Evening" && meal.day_slot == "Tuesday"
+                    = meal.recipes[0].title
+            %td.evening.wednesday
+              - if user_signed_in?
+                - current_user.meals.each do |meal|
+                  - if meal.meal_slot == "Evening" && meal.day_slot == "Wednesday"
+                    = meal.recipes[0].title
+            %td.evening.thursday
+              - if user_signed_in?
+                - current_user.meals.each do |meal|
+                  - if meal.meal_slot == "Evening" && meal.day_slot == "Thursday"
+                    = meal.recipes[0].title
+            %td.evening.friday
+              - if user_signed_in?
+                - current_user.meals.each do |meal|
+                  - if meal.meal_slot == "Evening" && meal.day_slot == "Friday"
+                    = meal.recipes[0].title
+            %td.evening.saturday
+              - if user_signed_in?
+                - current_user.meals.each do |meal|
+                  - if meal.meal_slot == "Evening" && meal.day_slot == "Saturday"
+                    = meal.recipes[0].title
+            %td.evening.sunday
+              - if user_signed_in?
+                - current_user.meals.each do |meal|
+                  - if meal.meal_slot == "Evening" && meal.day_slot == "Sunday"
+                    = meal.recipes[0].title
