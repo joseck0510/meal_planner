@@ -1,12 +1,7 @@
-!!!
-%html
-  %body
-    = render "search_form"
-    - if params[:search].present?
-      - if @recipes.blank?
-        No Results
-      - else
-        - @recipes.each do |recipe|
-          = recipe.title
-    #container
-      #calendar
+= render "search_form"
+  - if params[:search].present?
+  - if @recipes.blank?
+    No Results
+  - else
+    - @recipes.each do |recipe|
+      = link_to recipe.title, recipe_path(recipe)

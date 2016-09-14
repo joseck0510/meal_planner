@@ -1,4 +1,4 @@
-def add_recipe(title: 'Omelette', ingredient1:"egg", quantity1:"2",
+def add_recipe(title: 'Omelette', ingredient1:"Eggs", quantity1:"2",
                 ingredient2:"cheese",quantity2:"200g" )
   click_link 'Add recipe'
   fill_in 'Title', with: title

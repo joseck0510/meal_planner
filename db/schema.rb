@@ -43,11 +43,6 @@ ActiveRecord::Schema.define(version: 20160913140945) do
 
   add_index "meals", ["user_id"], name: "index_meals_on_user_id", using: :btree
 
-  create_table "recipe_ingredients", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "recipeingredients", force: :cascade do |t|
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
