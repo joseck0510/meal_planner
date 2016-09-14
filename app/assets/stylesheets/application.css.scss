@@ -93,6 +93,11 @@ p, ul, ol, {
 #main_navigation {
   padding: 1em 5%;
   border-bottom: 1px solid $border;
+a {
+  &:hover{
+    color: $highlight;
+  }
+}
   .name {
     font-weight: 700;
     font-size: .8em;
@@ -136,6 +141,9 @@ p, ul, ol, {
   text-decoration: none;
   margin: 4px 4px;
   cursor: pointer;
+  &:hover {
+    color: $dark;
+  }
 }
 
 #page_title {
@@ -166,5 +174,6 @@ p, ul, ol, {
     }
   }
 }
+
 
 @import "planners";
