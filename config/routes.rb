@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   get 'recipes/index'
+  get 'search', to: 'search#index'
 
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
