@@ -1,0 +1,6 @@
+- if params[:search].present?
+  - if @recipes.blank?
+    No Results
+  - else
+    - @recipes.each do |recipe|
+      = link_to recipe.title, recipe_path(recipe)
