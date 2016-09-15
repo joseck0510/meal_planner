@@ -26,6 +26,8 @@ $border: #e9e9e9;
 
 body {
   font-family: 'Raleway', sans-serif;
+  // background-image: url(/assets/foodphoto.jpeg);
+  // background-size: 100% auto;
 }
 
 .wrapper {
@@ -93,11 +95,13 @@ p, ul, ol, {
 #main_navigation {
   padding: 1em 5%;
   border-bottom: 1px solid $border;
+  background-color: white;
+  opacity: .30;
   a {
     &:hover{
       color: $highlight;
+    }
   }
-}
   .name {
     font-weight: 700;
     font-size: .8em;
@@ -108,6 +112,7 @@ p, ul, ol, {
     text-decoration: none;
     color: $dark;
     float: left;
+    opacity: 100%;
   }
   nav {
     float: right;
