@@ -1,5 +1,9 @@
-- if @recipe.any?
-  - @recipe.each do |recipe|
-    = link_to "#{recipe.title}", recipe_path(recipe)
-    = link_to 'Edit recipe', edit_recipe_path(recipe)
-    = link_to 'Delete recipe', recipe_path(recipe), method: :delete
+.container
+  .row
+    .column
+      - if @recipe.any?
+        - @recipe.each do |recipe|
+          %p
+            %h4= link_to "#{recipe.title}", recipe_path(recipe)
+          = link_to 'Edit recipe |', edit_recipe_path(recipe)
+          = link_to 'Delete recipe', recipe_path(recipe), method: :delete

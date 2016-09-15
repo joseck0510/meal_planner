@@ -13,7 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require cocoon
 //= require nested_form_fields
 //= require moment
 //= require fullcalendar

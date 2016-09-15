@@ -1,3 +1,49 @@
 // Place all the styles related to the planners controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+
+.blanktext {
+  color: transparent;
+  border-style: solid;
+}
+
+.meal_label {
+  background: transparent;
+  padding: 0.5em;
+  margin: 0.25em;
+  min-height: 6em;
+  text-align:center;
+}
+
+.day {
+  width: 10%;
+  float: left;
+  background: salmon;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.meal {
+  background: teal;
+  padding: 0.5em;
+  margin: 0.25em;
+  min-height: 6em;
+}
+
+.planner {
+  margin: auto 0
+}
+
+.container {
+  margin: auto 0
+}

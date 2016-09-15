@@ -1,5 +1,3 @@
-
-
 feature 'search' do
   scenario 'by recipe titles' do
     sign_up(email: 'test23@test.com')

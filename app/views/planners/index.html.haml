@@ -1,7 +1,7 @@
-= render "search_form"
-  - if params[:search].present?
-  - if @recipes.blank?
-    No Results
-  - else
-    - @recipes.each do |recipe|
-      = link_to recipe.title, recipe_path(recipe)
+!!!
+%html
+  %body
+    = render 'planner'
+    %br
+    = render "search_form"
+    

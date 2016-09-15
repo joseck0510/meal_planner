@@ -1,3 +1,6 @@
-= form_tag(search_planners_path, :method => "get", id: "search-form") do
-  = text_field_tag :search, params[:search], placeholder: "Search Recipes"
-  = submit_tag "Search", :name => nil
+.container
+  .row
+    .column
+      = form_tag(search_planners_path, :method => "get", id: "search-form") do
+        = text_field_tag :search, params[:search], placeholder: "Search Recipes"
+        = submit_tag "Search", :name => nil
