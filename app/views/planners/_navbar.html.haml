@@ -1,0 +1,11 @@
+%header#main_navigation.clearfix
+  = link_to 'Menu Planner', root_path, :class => 'name'
+  %nav
+    - if user_signed_in?
+      = link_to "My Recipes", recipes_path
+      = link_to "Add recipe", new_recipe_path
+      = link_to "Add a meal", new_meal_path
+      = link_to "Sign out", destroy_user_session_path, method: :delete
+    - else
+      = link_to "Sign in", new_user_session_path
+      = link_to "Sign up", new_user_registration_path

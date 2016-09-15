@@ -1,5 +1,4 @@
-%body
-  .search_form
-    = form_tag(planners_path, :method => "get", id: "search-form") do
-      = text_field_tag :search, params[:search], placeholder: "Search Recipes"
-      = submit_tag "Search", :name => nil, :class=> 'button_styled'
+%nav.search_form
+  = form_tag(planners_path, :method => "get", id: "search-form") do
+    = text_field_tag :search, params[:search], placeholder: "Search Recipes"
+    = submit_tag "Search", :name => nil, :class=> 'button_styled'

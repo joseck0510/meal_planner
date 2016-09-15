@@ -93,9 +93,9 @@ p, ul, ol, {
 #main_navigation {
   padding: 1em 5%;
   border-bottom: 1px solid $border;
-a {
-  &:hover{
-    color: $highlight;
+  a {
+    &:hover{
+      color: $highlight;
   }
 }
   .name {
@@ -119,17 +119,15 @@ a {
       font-size: .8rem;
     }
   }
-
 }
 
-.search_form {
+nav.search_form {
   font-weight: 400;
   font-size: .8em;
   color: $dark;
-  float: right bottom;
-  margin: 0;
-  padding-top: 2rem;
-  padding-left: 11rem;
+  float: right;
+  margin: 1rem 5%;
+  padding: 1rem;
 }
 
 .button_styled {
@@ -159,7 +157,7 @@ a {
   border-top: 1px solid $border;
   .copyright {
     float: left;
-    font-size: .9em;
+    font-size: .8em;
     margin: 0;
   }
   nav {

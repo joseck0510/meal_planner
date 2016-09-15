@@ -3,21 +3,63 @@
 // // You can use Sass (SCSS) here: http://sass-lang.com/
 //
 
-.col-1, .col-2, .col-3 {
+// .col-1, .col-2, .col-3 {
+//   float: left;
+// }
+//
+// .col-1 {
+//   width: 45%;
+//   padding: 0 5% 0 2.5%;
+// }
+//
+.col-2, .col-3 {
+  width: 100%;
+  padding: 0 2.5%
+}
+.container {
+  // margin: au;
+}
+// .planner {
+//   margin: auto 0;
+// }
+.blanktext {
+  color: transparent;
+}
+
+.meal_label {
+  background: transparent;
+  padding: .8em 4em;
+  margin: 5em 3em;
+  // height: 8em;
+  width: 15em;
+  text-align: bottom;
+  vertical-align: center;
+  transform: rotate(-90deg);
+  font-size: .7rem;
+  // border: 2px solid black;
   float: left;
 }
 
-.col-1 {
-  width: 45%;
-  padding: 0 5% 0 2.5%;
+.day {
+  width: 13%;
+  float: left;
+  // border: 2px solid $light;
+  text-align: center;
+  vertical-align: middle;
+  // background: salmon;
+  font-size: .7em;
 }
 
-.col-2, .col-3 {
-  width: 27.5%;
-  padding: 0 2.5%
+.meal {
+  border: 2px solid $light;
+  padding: .9em;
+  margin: .8em;
+  height: 15em;
+  // background: teal;
 }
 
-.homepage_content {
+
+
   h2 {
     font-size: 1.1rem;
     text-transform: uppercase;
@@ -34,6 +76,7 @@
     font-size: 1.35em;
     font-weight: 400;
     margin-bottom: .5em;
+    text-transform: uppercase;
   }
   a {
     text-decoration: none;
@@ -42,23 +85,13 @@
       color: $highlight
     }
   }
-  .date {
-    font-size: .85em;
-    margin-bottom: 2em;
-    color: $light;
-  }
+
   p {
-    margin: 0 0 .75em 0;
+    margin: 0;
+    padding: 0;
   }
-}
-.about {
-  padding: 0 7.5% 0 0;
-  a {
-    color: $highlight;
-    font-weight: 700;
-    text-decoration: none;
-  }
-}
+
+
 
 // * {
 //   box-sizing: border-box;
