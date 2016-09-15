@@ -24,113 +24,92 @@
             %td
               Morning
             %td.morning.monday
-              - if user_signed_in?
-                - current_user.meals.each do |meal|
-                  - if meal.meal_slot == "Morning" && meal.day_slot == "Monday"
-                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+              - current_user.meals.each do |meal|
+                - if meal.meal_slot == "Morning" && meal.day_slot == "Monday"
+                  = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
             %td.morning.tuesday
-              - if user_signed_in?
-                - current_user.meals.each do |meal|
-                  - if meal.meal_slot == "Morning" && meal.day_slot == "Tuesday"
-                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+              - current_user.meals.each do |meal|
+                - if meal.meal_slot == "Morning" && meal.day_slot == "Tuesday"
+                  = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
             %td.morning.wednesday
-              - if user_signed_in?
-                - current_user.meals.each do |meal|
-                  - if meal.meal_slot == "Morning" && meal.day_slot == "Wednesday"
-                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+              - current_user.meals.each do |meal|
+                - if meal.meal_slot == "Morning" && meal.day_slot == "Wednesday"
+                  = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
             %td.morning.thursday
-              - if user_signed_in?
-                - current_user.meals.each do |meal|
-                  - if meal.meal_slot == "Morning" && meal.day_slot == "Thursday"
-                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+              - current_user.meals.each do |meal|
+                - if meal.meal_slot == "Morning" && meal.day_slot == "Thursday"
+                  = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
             %td.morning.friday
-              - if user_signed_in?
-                - current_user.meals.each do |meal|
-                  - if meal.meal_slot == "Morning" && meal.day_slot == "Friday"
-                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+              - current_user.meals.each do |meal|
+                - if meal.meal_slot == "Morning" && meal.day_slot == "Friday"
+                  = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
             %td.morning.saturday
-              - if user_signed_in?
-                - current_user.meals.each do |meal|
-                  - if meal.meal_slot == "Morning" && meal.day_slot == "Saturday"
-                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+              - current_user.meals.each do |meal|
+                - if meal.meal_slot == "Morning" && meal.day_slot == "Saturday"
+                  = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
             %td.morning.sunday
-              - if user_signed_in?
-                - current_user.meals.each do |meal|
-                  - if meal.meal_slot == "Morning" && meal.day_slot == "Sunday"
-                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+              - current_user.meals.each do |meal|
+                - if meal.meal_slot == "Morning" && meal.day_slot == "Sunday"
+                  = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
           %tr
             %td
               Afternoon
             %td.afternoon.monday
-              - if user_signed_in?
-                - current_user.meals.each do |meal|
-                  - if meal.meal_slot == "Afternoon" && meal.day_slot == "Monday"
-                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+              - current_user.meals.each do |meal|
+                - if meal.meal_slot == "Afternoon" && meal.day_slot == "Monday"
+                  = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
             %td.afternoon.tuesday
-              - if user_signed_in?
-                - current_user.meals.each do |meal|
-                  - if meal.meal_slot == "Afternoon" && meal.day_slot == "Tuesday"
-                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+              - current_user.meals.each do |meal|
+                - if meal.meal_slot == "Afternoon" && meal.day_slot == "Tuesday"
+                  = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
             %td.afternoon.wednesday
-              - if user_signed_in?
-                - current_user.meals.each do |meal|
-                  - if meal.meal_slot == "Afternoon" && meal.day_slot == "Wednesday"
-                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+              - current_user.meals.each do |meal|
+                - if meal.meal_slot == "Afternoon" && meal.day_slot == "Wednesday"
+                  = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
             %td.afternoon.thursday
-              - if user_signed_in?
-                - current_user.meals.each do |meal|
-                  - if meal.meal_slot == "Afternoon" && meal.day_slot == "Thursday"
-                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+              - current_user.meals.each do |meal|
+                - if meal.meal_slot == "Afternoon" && meal.day_slot == "Thursday"
+                  = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
             %td.afternoon.friday
-              - if user_signed_in?
-                - current_user.meals.each do |meal|
-                  - if meal.meal_slot == "Afternoon" && meal.day_slot == "Friday"
-                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+              - current_user.meals.each do |meal|
+                - if meal.meal_slot == "Afternoon" && meal.day_slot == "Friday"
+                  = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
             %td.afternoon.saturday
-              - if user_signed_in?
-                - current_user.meals.each do |meal|
-                  - if meal.meal_slot == "Afternoon" && meal.day_slot == "Saturday"
-                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+              - current_user.meals.each do |meal|
+                - if meal.meal_slot == "Afternoon" && meal.day_slot == "Saturday"
+                  = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
             %td.afternoon.sunday
-              - if user_signed_in?
-                - current_user.meals.each do |meal|
-                  - if meal.meal_slot == "Afternoon" && meal.day_slot == "Sunday"
-                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+              - current_user.meals.each do |meal|
+                - if meal.meal_slot == "Afternoon" && meal.day_slot == "Sunday"
+                  = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
           %tr
             %td
               Evening
             %td.evening.monday
-              - if user_signed_in?
-                - current_user.meals.each do |meal|
-                  - if meal.meal_slot == "Evening" && meal.day_slot == "Monday"
-                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+              - current_user.meals.each do |meal|
+                - if meal.meal_slot == "Evening" && meal.day_slot == "Monday"
+                  = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
             %td.evening.tuesday
-              - if user_signed_in?
-                - current_user.meals.each do |meal|
-                  - if meal.meal_slot == "Evening" && meal.day_slot == "Tuesday"
-                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+              - current_user.meals.each do |meal|
+                - if meal.meal_slot == "Evening" && meal.day_slot == "Tuesday"
+                  = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
             %td.evening.wednesday
-              - if user_signed_in?
-                - current_user.meals.each do |meal|
-                  - if meal.meal_slot == "Evening" && meal.day_slot == "Wednesday"
-                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+              - current_user.meals.each do |meal|
+                - if meal.meal_slot == "Evening" && meal.day_slot == "Wednesday"
+                  = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
             %td.evening.thursday
-              - if user_signed_in?
-                - current_user.meals.each do |meal|
-                  - if meal.meal_slot == "Evening" && meal.day_slot == "Thursday"
-                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+              - current_user.meals.each do |meal|
+                - if meal.meal_slot == "Evening" && meal.day_slot == "Thursday"
+                  = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
             %td.evening.friday
-              - if user_signed_in?
-                - current_user.meals.each do |meal|
-                  - if meal.meal_slot == "Evening" && meal.day_slot == "Friday"
-                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+              - current_user.meals.each do |meal|
+                - if meal.meal_slot == "Evening" && meal.day_slot == "Friday"
+                  = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
             %td.evening.saturday
-              - if user_signed_in?
-                - current_user.meals.each do |meal|
-                  - if meal.meal_slot == "Evening" && meal.day_slot == "Saturday"
-                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+              - current_user.meals.each do |meal|
+                - if meal.meal_slot == "Evening" && meal.day_slot == "Saturday"
+                  = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
             %td.evening.sunday
-              - if user_signed_in?
-                - current_user.meals.each do |meal|
-                  - if meal.meal_slot == "Evening" && meal.day_slot == "Sunday"
-                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+              - current_user.meals.each do |meal|
+                - if meal.meal_slot == "Evening" && meal.day_slot == "Sunday"
+                  = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
