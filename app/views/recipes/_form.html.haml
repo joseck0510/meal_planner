@@ -1,6 +1,6 @@
 .container
   .row
-    .formcolumn.column
+    .column
       = form_for @recipe do |f|
         .form.title
           = f.label :recipe_title
@@ -14,8 +14,10 @@
             = iform.text_field :name
             = iform.label :ingredient_quantity
             = iform.text_field :quantity
+            %br
             = iform.remove_nested_fields_link "remove ingredient"
-        .column
+        .formcolumn
           = f.add_nested_fields_link :ingredients, "Add ingredient"
+          %br
           %br
           = f.submit

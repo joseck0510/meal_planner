@@ -1,27 +1,27 @@
-.container
+.planner.container
   .row
-    .column
+    .planner.column
       %table
         %tbody
           %tr
-            %td
+            %td.blank
 
-            %td
+            %td.header
               Monday
-            %td
+            %td.header
               Tuesday
-            %td
+            %td.header
               Wednesday 
-            %td
+            %td.header
               Thursday
-            %td
+            %td.header
               Friday 
-            %td
+            %td.header
               Saturday
-            %td
+            %td.header
               Sunday  
           %tr
-            %td
+            %td.header
               Morning
             %td.morning.monday
               - current_user.meals.each do |meal|
@@ -52,7 +52,7 @@
                 - if meal.meal_slot == "Morning" && meal.day_slot == "Sunday"
                   = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
           %tr
-            %td
+            %td.header
               Afternoon
             %td.afternoon.monday
               - current_user.meals.each do |meal|
@@ -83,7 +83,7 @@
                 - if meal.meal_slot == "Afternoon" && meal.day_slot == "Sunday"
                   = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
           %tr
-            %td
+            %td.header
               Evening
             %td.evening.monday
               - current_user.meals.each do |meal|
@@ -113,3 +113,4 @@
               - current_user.meals.each do |meal|
                 - if meal.meal_slot == "Evening" && meal.day_slot == "Sunday"
                   = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+      = link_to "Add a meal", new_meal_path, class: "button meal"

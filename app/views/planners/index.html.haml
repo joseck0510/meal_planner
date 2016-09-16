@@ -1,7 +1,11 @@
-!!!
-%html
-  %body
-    = render 'planner'
-    %br
-    = render "search_form"
-    
+-if !user_signed_in?
+  .container.landing
+    .row.landing
+      .column.landing
+        Not signed in
+- else
+  = render 'planner'
+  .container
+    .row
+      .column
+        = render 'search_form'

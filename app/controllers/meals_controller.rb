@@ -9,7 +9,7 @@ class MealsController < ApplicationController
      @meal = Meal.new(meal_params)
      @meal.user = current_user
      @meal.save
-     flash[:notice] = "Meal(#{@meal.day_slot},#{@meal.meal_slot}) successfully added"
+     flash[:notice] = "(#{@meal.day_slot},#{@meal.meal_slot}) meal successfully added"
      redirect_to root_path
   end
 

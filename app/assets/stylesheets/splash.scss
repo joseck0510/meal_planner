@@ -1,0 +1,28 @@
+body.image {
+  background-image: url(/assets/splash.jpeg);
+  background-size: 100% auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  color: white;
+}
+
+// splash-text{
+//   font-size: 6rem;
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translateX(-50%) translateY(0%);
+// }
+
+html, body, splash-text {
+    height: 100%;
+}
+splash-text {
+    font-size: 5.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
