@@ -10,6 +10,7 @@ gem 'haml-rails'
 gem 'fullcalendar-rails'
 gem 'momentjs-rails'
 gem "cocoon"
+gem "rails_12factor"
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
