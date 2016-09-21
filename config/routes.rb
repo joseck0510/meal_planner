@@ -10,7 +10,7 @@ Rails.application.routes.draw do
     end
 
     unauthenticated do
-      root 'devise/sessions#new', as: :unauthenticated_root
+      root 'planners#splash', as: :unauthenticated_root
     end
   end
 

@@ -1,6 +1,11 @@
-- if params[:search].present?
-  - if @recipes.blank?
-    No Results
-  - else
-    - @recipes.each do |recipe|
-      = link_to recipe.title, recipe_path(recipe)
+.container
+  .row
+    .column
+      - if params[:search].present?
+        - if @recipes.blank?
+          No Results
+        - else
+          %h2 Results
+          - @recipes.each do |recipe|
+            = link_to recipe.title, recipe_path(recipe)
+            %br

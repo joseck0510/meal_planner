@@ -3,7 +3,8 @@
     .column
       - if @recipe.any?
         - @recipe.each do |recipe|
+          = link_to "#{recipe.title}", recipe_path(recipe), class: "linkrecipe"
+          %br
+          = link_to 'Edit recipe |', edit_recipe_path(recipe), class: "linkrecipemodify"
+          = link_to 'Delete recipe', recipe_path(recipe), method: :delete, class: "linkrecipemodify"
           %p
-            %h4= link_to "#{recipe.title}", recipe_path(recipe)
-          = link_to 'Edit recipe |', edit_recipe_path(recipe)
-          = link_to 'Delete recipe', recipe_path(recipe), method: :delete

@@ -11,39 +11,78 @@ p {
   padding: 0;
 }
 
-
-.blanktext {
-  color: transparent;
-  border-style: solid;
+body {
+  font-family: 'Raleway', sans-serif;
 }
 
-.meal_label {
-  background: transparent;
-  padding: 0.5em;
-  margin: 0.25em;
-  min-height: 6em;
-  text-align:center;
+h1, h2, h3, h4, h5, h6, p, ul, li {
+  color: $dark;
 }
 
-.day {
-  width: 10%;
-  float: left;
-  background: salmon;
-  text-align: center;
-  vertical-align: middle;
+h1 {
+  font-size: 2.5rem;
 }
 
-.meal {
-  background: teal;
-  padding: 0.5em;
-  margin: 0.25em;
-  min-height: 6em;
+h2 {
+  font-size: 2rem;
 }
 
-.planner {
-  margin: auto 0
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.375rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+td.header{
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+
+button {
+  color: $light;
 }
 
 .container {
-  margin: auto 0
+  padding-bottom: 5%;
+  padding-top: 6%;
+}
+
+.planner.container {
+  padding-bottom: 0;
+}
+
+th{
+  text-align: center;
+}
+
+td.morning, td.afternoon, td.evening {
+  border: 0.5px solid #d1d1d1;
+  word-wrap: normal;
+  width: 14%;
+  height: 130px;
+  text-align: center;
+}
+
+td.header, td.blank {
+  border-bottom: none;
+  border-top: none;
+  text-align: center;
+}
+
+.linkrecipemodify{
+  font-size: 1.2rem;
+}
+
+.linkrecipe{
+  font-size: 2.7rem;
 }

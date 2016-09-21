@@ -42,8 +42,8 @@ button,
 input[type='button'],
 input[type='reset'],
 input[type='submit'] {
-  background-color: #9b4dca;
-  border: 0.1rem solid #9b4dca;
+  background-color: $sea_foam;
+  border: 0.1rem solid $sea_foam;
   border-radius: 0.4rem;
   color: #fff;
   cursor: pointer;
@@ -246,7 +246,7 @@ input[type='text']:focus,
 input[type='url']:focus,
 textarea:focus,
 select:focus {
-  border: 0.1rem solid #9b4dca;
+  border: 0.1rem solid $dark;
   outline: 0;
 }
 
@@ -426,11 +426,11 @@ input[type='radio'] {
   }
 }
 a {
-  color: #9b4dca;
+  color: $dark;
   text-decoration: none;
 }
 a:hover {
-  color: #606c76;
+  color: $rust;
 }
 
 dl,

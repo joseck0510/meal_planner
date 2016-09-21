@@ -1,36 +1,58 @@
-.nav{
-  ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      border: 1px solid #e7e7e7;
-      background-color: #f3f3f3;
+#main_navigation {
+  overflow: hidden;
+  padding: 1em 5%;
+  border-bottom: 1px solid $border;
+  background-color: rgba(255,255,255,1);
+  position: fixed;
+  display: inline-block;
+  top: 0;
+  width: 100%;
+  z-index: 300;
+  a {
+    &:hover{
+      color: $highlight;
+    }
   }
 
-  li.menu-item {
-      float: right;
+  .name {
+    font-weight: 700;
+    font-size: .8em;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    border: 2px solid $sea_foam;
+    padding: 1rem;
+    text-decoration: none;
+    color: $dark;
+    float: left;
   }
 
-  li.brand {
-      float: left;
-      font-weight: bold;
+  nav {
+  float: right;
+  padding: 1rem;
+  a {
+    color: $dark;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 1rem;
+    font-size: 1.3rem;
+    }
   }
+}
 
-  li a {
-      display: block;
-      color: #666;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-  }
+p, li {
+font-size: 1.1rem;
+line-height: 1.75;
+}
 
-  li a:hover:not(.active) {
-      background-color: #ddd;
-  }
+p, ul, ol, {
+  margin: 0 0 1.6em 0;
+}
 
-  li a.active {
-      color: white;
-      background-color: #4CAF50;
-  }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
 }
