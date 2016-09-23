@@ -1,5 +1,9 @@
 # Meal Planner
 
+![](public/splash_screenshot.png)
+
+![](public/interface_screenshot.png)
+
 ### Objectives of project
 
 Makers Academy final group project to experience designing and implementing an MVP as part of a group over a 10 day period. The app was inspired by recipe websites and meal planners that allow users to plan out a weeks worth of meals and save recipes to their profiles.
