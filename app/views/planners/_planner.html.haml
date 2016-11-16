@@ -26,91 +26,112 @@
             %td.morning.monday
               - current_user.meals.each do |meal|
                 - if meal.meal_slot == "Morning" && meal.day_slot == "Monday"
-                  = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+                  - unless meal.recipes[0] == nil
+                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
             %td.morning.tuesday
               - current_user.meals.each do |meal|
                 - if meal.meal_slot == "Morning" && meal.day_slot == "Tuesday"
-                  = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+                  - unless meal.recipes[0] == nil
+                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
             %td.morning.wednesday
               - current_user.meals.each do |meal|
                 - if meal.meal_slot == "Morning" && meal.day_slot == "Wednesday"
-                  = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+                  - unless meal.recipes[0] == nil
+                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
             %td.morning.thursday
               - current_user.meals.each do |meal|
                 - if meal.meal_slot == "Morning" && meal.day_slot == "Thursday"
-                  = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+                  - unless meal.recipes[0] == nil
+                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
             %td.morning.friday
               - current_user.meals.each do |meal|
                 - if meal.meal_slot == "Morning" && meal.day_slot == "Friday"
-                  = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+                  - unless meal.recipes[0] == nil
+                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
             %td.morning.saturday
               - current_user.meals.each do |meal|
                 - if meal.meal_slot == "Morning" && meal.day_slot == "Saturday"
-                  = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+                  - unless meal.recipes[0] == nil
+                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
             %td.morning.sunday
               - current_user.meals.each do |meal|
                 - if meal.meal_slot == "Morning" && meal.day_slot == "Sunday"
-                  = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+                  - unless meal.recipes[0] == nil
+                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
           %tr
             %td.header
               Afternoon
             %td.afternoon.monday
               - current_user.meals.each do |meal|
                 - if meal.meal_slot == "Afternoon" && meal.day_slot == "Monday"
-                  = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+                  - unless meal.recipes[0] == nil
+                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
             %td.afternoon.tuesday
               - current_user.meals.each do |meal|
                 - if meal.meal_slot == "Afternoon" && meal.day_slot == "Tuesday"
-                  = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+                  - unless meal.recipes[0] == nil
+                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
             %td.afternoon.wednesday
               - current_user.meals.each do |meal|
                 - if meal.meal_slot == "Afternoon" && meal.day_slot == "Wednesday"
-                  = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+                  - unless meal.recipes[0] == nil
+                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
             %td.afternoon.thursday
               - current_user.meals.each do |meal|
                 - if meal.meal_slot == "Afternoon" && meal.day_slot == "Thursday"
-                  = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+                  - unless meal.recipes[0] == nil
+                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
             %td.afternoon.friday
               - current_user.meals.each do |meal|
                 - if meal.meal_slot == "Afternoon" && meal.day_slot == "Friday"
-                  = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+                  - unless meal.recipes[0] == nil
+                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
             %td.afternoon.saturday
               - current_user.meals.each do |meal|
                 - if meal.meal_slot == "Afternoon" && meal.day_slot == "Saturday"
-                  = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+                  - unless meal.recipes[0] == nil
+                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
             %td.afternoon.sunday
               - current_user.meals.each do |meal|
                 - if meal.meal_slot == "Afternoon" && meal.day_slot == "Sunday"
-                  = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+                  - unless meal.recipes[0] == nil
+                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
           %tr
             %td.header
               Evening
             %td.evening.monday
               - current_user.meals.each do |meal|
                 - if meal.meal_slot == "Evening" && meal.day_slot == "Monday"
-                  = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+                  - unless meal.recipes[0] == nil
+                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
             %td.evening.tuesday
               - current_user.meals.each do |meal|
                 - if meal.meal_slot == "Evening" && meal.day_slot == "Tuesday"
-                  = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+                  - unless meal.recipes[0] == nil
+                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
             %td.evening.wednesday
               - current_user.meals.each do |meal|
                 - if meal.meal_slot == "Evening" && meal.day_slot == "Wednesday"
-                  = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+                  - unless meal.recipes[0] == nil
+                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
             %td.evening.thursday
               - current_user.meals.each do |meal|
                 - if meal.meal_slot == "Evening" && meal.day_slot == "Thursday"
-                  = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+                  - unless meal.recipes[0] == nil
+                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
             %td.evening.friday
               - current_user.meals.each do |meal|
                 - if meal.meal_slot == "Evening" && meal.day_slot == "Friday"
-                  = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+                  - unless meal.recipes[0] == nil
+                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
             %td.evening.saturday
               - current_user.meals.each do |meal|
                 - if meal.meal_slot == "Evening" && meal.day_slot == "Saturday"
-                  = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+                  - unless meal.recipes[0] == nil
+                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
             %td.evening.sunday
               - current_user.meals.each do |meal|
                 - if meal.meal_slot == "Evening" && meal.day_slot == "Sunday"
-                  = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+                  - unless meal.recipes[0] == nil
+                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
       = link_to "Add a meal", new_meal_path, class: "button meal"
