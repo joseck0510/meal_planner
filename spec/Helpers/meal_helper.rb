@@ -1,5 +1,6 @@
 def add_meal(day_slot: 'Monday', meal_slot: 'Evening', title: 'Omelette')
-  click_link 'Add a meal'
+  click_link title
+  click_link 'Add meal'
   select day_slot
   select meal_slot
   select title
