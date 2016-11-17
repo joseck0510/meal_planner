@@ -4,8 +4,8 @@ feature 'Recipes' do
     scenario 'adding recipes' do
       sign_up
       add_recipe
-      expect(page).to have_content 'Recipe(Omelette) successfully created'
-      expect(current_path).to eq '/recipes/new'
+      expect(page).to have_content 'Omelette recipe successfully created'
+      expect(current_path).to eq '/recipes'
     end
 
     scenario 'editing a recipe' do
