@@ -1,0 +1,3 @@
+- if model.meal_slot == options[:meal_time] && model.day_slot == options[:day_of_week]
+  - unless model.recipes[0] == nil
+    = link_to "#{model.recipes[0].title}", recipe_path(model.recipes[0])

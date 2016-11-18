@@ -25,113 +25,71 @@
               Morning
             %td.morning.monday
               - current_user.meals.each do |meal|
-                - if meal.meal_slot == "Morning" && meal.day_slot == "Monday"
-                  - unless meal.recipes[0] == nil
-                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+                = cell(:meal, meal, meal_time: "Morning", day_of_week: "Monday")
             %td.morning.tuesday
               - current_user.meals.each do |meal|
-                - if meal.meal_slot == "Morning" && meal.day_slot == "Tuesday"
-                  - unless meal.recipes[0] == nil
-                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+                = cell(:meal, meal, meal_time: "Morning", day_of_week: "Tuesday")
             %td.morning.wednesday
               - current_user.meals.each do |meal|
-                - if meal.meal_slot == "Morning" && meal.day_slot == "Wednesday"
-                  - unless meal.recipes[0] == nil
-                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+                = cell(:meal, meal, meal_time: "Morning", day_of_week: "Wednesday")
             %td.morning.thursday
               - current_user.meals.each do |meal|
-                - if meal.meal_slot == "Morning" && meal.day_slot == "Thursday"
-                  - unless meal.recipes[0] == nil
-                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+                = cell(:meal, meal, meal_time: "Morning", day_of_week: "Thursday")
             %td.morning.friday
               - current_user.meals.each do |meal|
-                - if meal.meal_slot == "Morning" && meal.day_slot == "Friday"
-                  - unless meal.recipes[0] == nil
-                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+                = cell(:meal, meal, meal_time: "Morning", day_of_week: "Friday")
             %td.morning.saturday
               - current_user.meals.each do |meal|
-                - if meal.meal_slot == "Morning" && meal.day_slot == "Saturday"
-                  - unless meal.recipes[0] == nil
-                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+                = cell(:meal, meal, meal_time: "Morning", day_of_week: "Saturday")
             %td.morning.sunday
               - current_user.meals.each do |meal|
-                - if meal.meal_slot == "Morning" && meal.day_slot == "Sunday"
-                  - unless meal.recipes[0] == nil
-                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+                = cell(:meal, meal, meal_time: "Morning", day_of_week: "Sunday")
           %tr
             %td.header
               Afternoon
             %td.afternoon.monday
               - current_user.meals.each do |meal|
-                - if meal.meal_slot == "Afternoon" && meal.day_slot == "Monday"
-                  - unless meal.recipes[0] == nil
-                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+                = cell(:meal, meal, meal_time: "Afternoon", day_of_week: "Monday")
             %td.afternoon.tuesday
               - current_user.meals.each do |meal|
-                - if meal.meal_slot == "Afternoon" && meal.day_slot == "Tuesday"
-                  - unless meal.recipes[0] == nil
-                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+                = cell(:meal, meal, meal_time: "Afternoon", day_of_week: "Tuesday")
             %td.afternoon.wednesday
               - current_user.meals.each do |meal|
-                - if meal.meal_slot == "Afternoon" && meal.day_slot == "Wednesday"
-                  - unless meal.recipes[0] == nil
-                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+                = cell(:meal, meal, meal_time: "Afternoon", day_of_week: "Wednesday")
             %td.afternoon.thursday
               - current_user.meals.each do |meal|
-                - if meal.meal_slot == "Afternoon" && meal.day_slot == "Thursday"
-                  - unless meal.recipes[0] == nil
-                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+                = cell(:meal, meal, meal_time: "Afternoon", day_of_week: "Thursday")
             %td.afternoon.friday
               - current_user.meals.each do |meal|
-                - if meal.meal_slot == "Afternoon" && meal.day_slot == "Friday"
-                  - unless meal.recipes[0] == nil
-                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+                = cell(:meal, meal, meal_time: "Afternoon", day_of_week: "Friday")
             %td.afternoon.saturday
               - current_user.meals.each do |meal|
-                - if meal.meal_slot == "Afternoon" && meal.day_slot == "Saturday"
-                  - unless meal.recipes[0] == nil
-                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+                = cell(:meal, meal, meal_time: "Afternoon", day_of_week: "Saturday")
             %td.afternoon.sunday
               - current_user.meals.each do |meal|
-                - if meal.meal_slot == "Afternoon" && meal.day_slot == "Sunday"
-                  - unless meal.recipes[0] == nil
-                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+                = cell(:meal, meal, meal_time: "Afternoon", day_of_week: "Sunday")
           %tr
             %td.header
               Evening
             %td.evening.monday
               - current_user.meals.each do |meal|
-                - if meal.meal_slot == "Evening" && meal.day_slot == "Monday"
-                  - unless meal.recipes[0] == nil
-                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+                = cell(:meal, meal, meal_time: "Evening", day_of_week: "Monday")
             %td.evening.tuesday
               - current_user.meals.each do |meal|
-                - if meal.meal_slot == "Evening" && meal.day_slot == "Tuesday"
-                  - unless meal.recipes[0] == nil
-                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+                = cell(:meal, meal, meal_time: "Evening", day_of_week: "Tuesday")
             %td.evening.wednesday
               - current_user.meals.each do |meal|
-                - if meal.meal_slot == "Evening" && meal.day_slot == "Wednesday"
-                  - unless meal.recipes[0] == nil
-                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+                = cell(:meal, meal, meal_time: "Evening", day_of_week: "Wednesday")
             %td.evening.thursday
               - current_user.meals.each do |meal|
-                - if meal.meal_slot == "Evening" && meal.day_slot == "Thursday"
-                  - unless meal.recipes[0] == nil
-                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+                = cell(:meal, meal, meal_time: "Evening", day_of_week: "Thursday")
             %td.evening.friday
               - current_user.meals.each do |meal|
-                - if meal.meal_slot == "Evening" && meal.day_slot == "Friday"
-                  - unless meal.recipes[0] == nil
-                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+                = cell(:meal, meal, meal_time: "Evening", day_of_week: "Friday")
             %td.evening.saturday
               - current_user.meals.each do |meal|
-                - if meal.meal_slot == "Evening" && meal.day_slot == "Saturday"
-                  - unless meal.recipes[0] == nil
-                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+                = cell(:meal, meal, meal_time: "Evening", day_of_week: "Saturday")
             %td.evening.sunday
               - current_user.meals.each do |meal|
-                - if meal.meal_slot == "Evening" && meal.day_slot == "Sunday"
-                  - unless meal.recipes[0] == nil
-                    = link_to "#{meal.recipes[0].title}", recipe_path(meal.recipes[0])
+                = cell(:meal, meal, meal_time: "Evening", day_of_week: "Sunday")
       = link_to "Add a meal", new_meal_path, class: "button meal"
