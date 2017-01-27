@@ -26,7 +26,7 @@ Available on on [sketchboard.me](https://sketchboard.me/Tz56SucjbzsU#/)
 
 Clone repo to a local directory:
 
-``git clone git@github.com:joseck0510/meal_planner.git``
+``git clone git@github.com:acsauk/meal_planner.git``
 
 Create database structures and migrate database
 
