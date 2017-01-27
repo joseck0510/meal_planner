@@ -28,6 +28,11 @@ Clone repo to a local directory:
 
 ``git clone git@github.com:joseck0510/meal_planner.git``
 
+Create database structures and migrate database
+
+``rake db:create``
+``rake db:migrate``
+
 Run rails server:
 
 ``bin/rails s``
