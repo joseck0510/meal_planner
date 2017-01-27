@@ -28,7 +28,7 @@ Clone repo to a local directory:
 
 ``git clone git@github.com:acsauk/meal_planner.git``
 
-Create database structures and migrate database
+Create database structures and migrate database:
 
 ``rake db:create``
 ``rake db:migrate``
