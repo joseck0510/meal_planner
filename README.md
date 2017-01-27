@@ -22,7 +22,7 @@ Available on on [sketchboard.me](https://sketchboard.me/Tz56SucjbzsU#/)
 - SCSS (Milligram)
 - HTML
 
-### How to run it
+### How to run the app
 
 Clone repo to a local directory:
 
