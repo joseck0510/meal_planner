@@ -3,11 +3,7 @@
   padding: 1em 5%;
   border-bottom: 1px solid $border;
   background-color: rgba(255,255,255,1);
-  position: fixed;
-  display: inline-block;
-  top: 0;
   width: 100%;
-  z-index: 300;
   a {
     &:hover{
       color: $highlight;
