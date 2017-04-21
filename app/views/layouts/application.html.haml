@@ -8,8 +8,17 @@
     = csrf_meta_tags
 
   %body
-    = render "layouts/nav"
-    %p.notice= notice
-    %p.alert= alert
-    = yield
-    = render "layouts/footer"
+    .container
+      .row
+        .column
+          .row
+            .column
+              = render "layouts/nav"
+              %p.notice= notice
+              %p.alert= alert
+      .row
+        .column
+          = yield
+      .row
+        .column
+          = render "layouts/footer"

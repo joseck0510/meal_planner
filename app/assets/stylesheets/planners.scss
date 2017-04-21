@@ -6,10 +6,10 @@
   box-sizing: border-box;
 }
 
-p {
-  margin: 0;
-  padding: 0;
-}
+// p {
+//   margin: 0;
+//   padding: 0;
+// }
 
 body {
   font-family: 'Raleway', sans-serif;
@@ -52,14 +52,14 @@ button {
   color: $light;
 }
 
-.container {
-  padding-bottom: 5%;
-  padding-top: 6%;
-}
+// .container {
+//   padding-bottom: 5%;
+//   padding-top: 6%;
+// }
 
-.planner.container {
-  padding-bottom: 0;
-}
+// .planner.container {
+//   padding-bottom: 0;
+// }
 
 th{
   text-align: center;
