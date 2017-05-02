@@ -3,8 +3,8 @@ class Recipe < ActiveRecord::Base
   belongs_to :user
   belongs_to :meal
 
-  has_many :recipeingredients, dependent: :destroy
-  has_many :ingredients, through: :recipeingredients, dependent: :destroy
+  has_many :recipe_ingredients, dependent: :destroy
+  has_many :ingredients, through: :recipe_ingredients, dependent: :destroy
 
   has_many :meal_recipes, dependent: :destroy
   has_many :meals, through: :meal_recipes, dependent: :destroy
