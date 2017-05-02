@@ -1,4 +1,4 @@
 class ShoppingIngredient < ActiveRecord::Base
-  belongs_to :shoppinglist
+  belongs_to :shopping_list
   belongs_to :ingredient
 end
