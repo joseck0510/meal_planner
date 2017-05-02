@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170423142455) do
+ActiveRecord::Schema.define(version: 20170502204824) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,15 +23,15 @@ ActiveRecord::Schema.define(version: 20170423142455) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "mealrecipes", force: :cascade do |t|
+  create_table "meal_recipes", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer  "recipe_id"
     t.integer  "meal_id"
   end
 
-  add_index "mealrecipes", ["meal_id"], name: "index_mealrecipes_on_meal_id", using: :btree
-  add_index "mealrecipes", ["recipe_id"], name: "index_mealrecipes_on_recipe_id", using: :btree
+  add_index "meal_recipes", ["meal_id"], name: "index_meal_recipes_on_meal_id", using: :btree
+  add_index "meal_recipes", ["recipe_id"], name: "index_meal_recipes_on_recipe_id", using: :btree
 
   create_table "meals", force: :cascade do |t|
     t.string   "meal_slot"
@@ -95,8 +95,8 @@ ActiveRecord::Schema.define(version: 20170423142455) do
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
-  add_foreign_key "mealrecipes", "meals"
-  add_foreign_key "mealrecipes", "recipes"
+  add_foreign_key "meal_recipes", "meals"
+  add_foreign_key "meal_recipes", "recipes"
   add_foreign_key "meals", "users"
   add_foreign_key "recipeingredients", "ingredients"
   add_foreign_key "recipeingredients", "recipes"

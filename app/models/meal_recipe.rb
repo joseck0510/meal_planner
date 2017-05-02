@@ -1,4 +1,4 @@
-class Mealrecipe < ActiveRecord::Base
+class MealRecipe < ActiveRecord::Base
   belongs_to :meal
   belongs_to :recipe
 end
