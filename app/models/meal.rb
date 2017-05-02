@@ -2,10 +2,10 @@ class Meal < ActiveRecord::Base
 
   belongs_to :user
 
-  has_many :mealrecipes
-  has_many :recipes, through: :mealrecipes, dependent: :destroy
+  has_many :meal_recipes
+  has_many :recipes, through: :meal_recipes, dependent: :destroy
 
-  accepts_nested_attributes_for :mealrecipes, allow_destroy: true
+  accepts_nested_attributes_for :meal_recipes, allow_destroy: true
 
 
 end
