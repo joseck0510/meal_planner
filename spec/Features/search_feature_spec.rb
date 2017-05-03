@@ -1,9 +1,12 @@
 feature 'search' do
-  scenario 'by recipe titles' do
+  before(:each) do
     sign_up
     add_recipe
     add_recipe(title: 'Pasta', ingredient1: 'pasta')
     visit '/'
+  end
+
+  scenario 'by recipe titles' do
     fill_in 'search', with: 'Omelette'
     click_button 'Search'
     expect(page).to have_content('Omelette')
@@ -11,10 +14,6 @@ feature 'search' do
   end
 
   scenario 'by ingredients' do
-    sign_up
-    add_recipe
-    add_recipe(title: 'Pasta', ingredient1: 'pasta')
-    visit '/'
     fill_in 'search', with: 'egg'
     click_button 'Search'
     expect(page).to have_content('Omelette')
@@ -23,10 +22,6 @@ feature 'search' do
 
   context 'when result is clicked' do
     scenario 'show recipe' do
-      sign_up
-      add_recipe
-      add_recipe(title: 'Pasta', ingredient1: 'pasta')
-      visit '/'
       fill_in 'search', with: 'egg'
       click_button 'Search'
       click_link 'Omelette'
