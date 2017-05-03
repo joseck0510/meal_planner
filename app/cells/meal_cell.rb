@@ -1,6 +1,5 @@
 class MealCell < Cell::ViewModel
-
-  def show()
+  def show
     render
   end
 end
