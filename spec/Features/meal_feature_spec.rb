@@ -1,10 +1,12 @@
 feature 'meals' do
-  before { sign_up }
-  before { add_recipe }
+  before(:each) do
+    sign_up
+    add_recipe
+    add_meal
+  end
 
   context 'creating meals' do
     scenario 'a user can create a meal' do
-      add_meal
       expect(page).to have_content 'Monday'
       expect(page).to have_content 'Evening'
       expect(current_path).to eq '/'
@@ -13,7 +15,6 @@ feature 'meals' do
 
   context 'viewing a meal planner' do
     scenario 'a user can view a meal plan' do
-      add_meal
       add_recipe(title: 'Hamburgers')
       add_meal(title: 'Hamburgers')
       expect(page).to have_content 'Omelette'
