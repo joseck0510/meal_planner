@@ -8,6 +8,9 @@ class Recipe < ActiveRecord::Base
   has_many :meal_recipes, dependent: :destroy
   has_many :meals, through: :meal_recipes, dependent: :destroy
 
+  has_many :tags
+  has_many :tag_recipes, through: :tag_recipes
+
   accepts_nested_attributes_for :ingredients,
                                 allow_destroy: true,
                                 reject_if: :all_blank

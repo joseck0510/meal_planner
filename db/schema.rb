@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170502214117) do
+ActiveRecord::Schema.define(version: 20170504210900) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -82,6 +82,22 @@ ActiveRecord::Schema.define(version: 20170502214117) do
 
   add_index "shopping_lists", ["user_id"], name: "index_shopping_lists_on_user_id", using: :btree
 
+  create_table "tag_recipes", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "recipe_id"
+    t.integer  "tag_id"
+  end
+
+  add_index "tag_recipes", ["recipe_id"], name: "index_tag_recipes_on_recipe_id", using: :btree
+  add_index "tag_recipes", ["tag_id"], name: "index_tag_recipes_on_tag_id", using: :btree
+
+  create_table "tags", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
@@ -109,4 +125,6 @@ ActiveRecord::Schema.define(version: 20170502214117) do
   add_foreign_key "shopping_ingredients", "ingredients"
   add_foreign_key "shopping_ingredients", "shopping_lists"
   add_foreign_key "shopping_lists", "users"
+  add_foreign_key "tag_recipes", "recipes"
+  add_foreign_key "tag_recipes", "tags"
 end
