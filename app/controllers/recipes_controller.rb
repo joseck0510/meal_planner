@@ -2,6 +2,8 @@ class RecipesController < ApplicationController
   before_action :find_recipe, only: %i[edit update destroy show]
 
   def index
+    @q = Recipe.ransack(params[:q])
+    @recipes = @q.result(distinct: true)
     @recipe = Recipe.all
   end
 
